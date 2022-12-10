@@ -2,8 +2,22 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+  <style>
+      .content-wrapper{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        background-color: #1E282C;
+      }
+  </style>
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    <style>
+      h1,.form-group{
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-weight: bolder;
+        color: gray;
+      }
+    </style>
       <h1>
         Reports
       </h1>
@@ -51,7 +65,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Sales - Report</h3>
+              <h3 class="box-title">Total Monthly Sales - Report</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -119,7 +133,12 @@
 
     $(document).ready(function() {
       $("#reportNav").addClass('active');
-    }); 
+       //This will help you to hide your message after 3 seconds with fadeOut animation.
+      // You can change seconds in timeout variable.
+      var timeout = 3000; // in miliseconds (3*1000)
+
+      $('.alert').delay(timeout).fadeOut(300);
+      }); 
 
     var report_data = <?php echo '[' . implode(',', $results) . ']'; ?>;
     

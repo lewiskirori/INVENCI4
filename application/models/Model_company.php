@@ -17,6 +17,14 @@ class Model_company extends CI_Model
 		}
 	}
 
+	public function upload_image($data)
+	{
+		if($data) {
+			$insert = $this->db->insert('company', $data);
+			return ($insert == true) ? true : false;
+		}
+	}
+
 	public function update($data, $id)
 	{
 		if($data && $id) {

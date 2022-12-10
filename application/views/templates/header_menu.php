@@ -29,15 +29,13 @@
       <span class="nav-msge">
       <style>
       .nav-msge a{
-        font-family: Brush Script MT;
-        font-size: larger;
-        font-weight: bolder;
-        font: small;
+        font-family:palatino linotype;
+        font-size: 1.5rem;
         color: white;
         display: flex;
         cursor: default;
       }
-    </style><i><a href="<?php echo base_url('/dashboard') ?>">
+    </style><a href="<?php echo base_url('/dashboard') ?>">
     Services with a difference<br>
     <?php echo date('D') .' '.date('d').', '.date('M y.'); ?>
 			<?php  /* This sets the $time variable to the current hour in the 24 hour clock format */
@@ -60,7 +58,7 @@
     if ($time >= "20") {
         echo "Shouldn't you be in bed ?<br>Good Night!";
     }
-    ?> </i></span></a>
+    ?></span></a>
 
     <!-- <li class="header">Settings</li> -->
     <style>
@@ -73,7 +71,7 @@
         float: right;
         width: 100px;
         right: 50%;
-        margin-top: -36px;
+        margin-top: -33px;
         outline: none;
         border: 1px solid rgb(44, 22, 8);
         border-radius: 30px;

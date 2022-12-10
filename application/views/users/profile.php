@@ -2,8 +2,22 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+  <style>
+      .content-wrapper{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        background-color: #1E282C;
+      }
+  </style>
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    <style>
+      h1{
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-weight: bolder;
+        color: gray;
+      }
+    </style>
       <h1>
         User
         <small>Profile</small>

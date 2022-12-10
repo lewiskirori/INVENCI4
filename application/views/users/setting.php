@@ -2,8 +2,22 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+  <style>
+      .content-wrapper{
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;;
+        font-weight: 500;
+        background-color: #1E282C;
+      }
+   </style>
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    <style>
+      h1{
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-weight: bolder;
+        color: gray;
+      }
+    </style>
       <h1>
         User
         <small>Setting</small>
@@ -35,7 +49,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Update Information</h3>
+              <h3 class="box-title">Update User Profile</h3>
             </div>
             <!-- /.box-header -->
             <form role="form" action="<?php base_url('users/setting') ?>" method="post">
@@ -87,9 +101,9 @@
                 </div>
 
                 <div class="form-group">
-                  <div class="alert alert-info alert-dismissible" role="alert">
+                  <div class=" alert alert-info alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      Leave the password field empty if you don't want to change.
+                      Leave the password fields empty if you don't want to change..!
                   </div>
                 </div>
 
@@ -107,7 +121,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="submit" class="btn btn-primary">Save Profile Changes</button>
                 <a href="<?php echo base_url('users/') ?>" class="btn btn-warning">Back</a>
               </div>
             </form>
@@ -124,4 +138,13 @@
   </div>
   <!-- /.content-wrapper -->
 
- 
+  <script type="text/javascript">
+           $(function() {
+// setTimeout() function will be fired after page is loaded
+// it will wait for 2 sec. and then will fire
+// $("#successMessage").hide() function
+setTimeout(function() {
+    $(".alert-success").hide('blind', {}, 200)
+}, 2000);
+});
+</script>

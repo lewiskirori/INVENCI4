@@ -73,7 +73,7 @@
               <tr>
                 <th>Image</th>
                 <th>Serial no.</th>
-                <th>Product Name</th>
+                <th>Product Name/Description</th>
                 <th>Price</th>
                 <th>Qty</th>
                 <th>Store</th>

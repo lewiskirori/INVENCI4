@@ -182,7 +182,7 @@ class Orders extends Admin_Controller
         	$update = $this->model_orders->update($id);
         	
         	if($update == true) {
-        		$this->session->set_flashdata('success', 'Yay, Up to date !!');
+        		$this->session->set_flashdata('success', 'Success, You are up-to-date !!');
         		redirect('orders/update/'.$id, 'refresh');
         	}
         	else {
@@ -272,7 +272,7 @@ class Orders extends Admin_Controller
 			<head>
 			  <meta charset="utf-8">
 			  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-			  <title>AdminLTE 2 | Invoice</title>
+			  <title>AdminLTE | Invoice</title>
 			  <!-- Tell the browser to be responsive to screen width -->
 			  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 			  <!-- Bootstrap 3.3.7 -->
@@ -284,13 +284,51 @@ class Orders extends Admin_Controller
 			<body onload="window.print();">
 			
 			<div class="wrapper">
+				<style>
+				.wrapper{
+					font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+					font-weight: 500;
+				}
+				</style>
 			  <section class="invoice">
 			    <!-- title row -->
 			    <div class="row">
 			      <div class="col-xs-12">
+				  <h1 class="page-header">INVOICE</h1>
+				  <style>
+					h1{
+						font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+						font-weight: bolder;
+						color: #fff;
+						text-align: center;
+						letter-spacing: 5px;
+						background-color: #000000;
+					}
+					</style>
+				  <style>
+					h2{
+						font-family: Verdana, Geneva, Tahoma, sans-serif;
+						font-weight: bolder;
+						color: #fff;
+						text-align: center;
+						background-color: #010A30;
+					}
+					</style>
 			        <h2 class="page-header">
-			          '.$company_info['company_name'].'
-			          <small class="pull-right">Date: '.$order_date.'</small>
+                  	<img src="http://127.0.0.1/InvenCi4/invenci4-logo.jpg" width="50" height="50" class="img-square"/>
+			          '.$company_info['company_name'].'<br><small><i><b>ICT Sales, Maintenance & General Supplies</b></i></small>
+					  <small>'.$company_info['address'].'<br>
+					  Tel: '.$company_info['phone'].'<br>
+						Email: '.$company_info['email'].'</small>
+			          <h3 class="pull-right">Date: '.$order_date.'</h3>
+					  <style>
+						h3{
+							font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+							font-weight: bolder;
+							font-size: 1.5rem;
+							color: gray;
+						}
+					</style>
 			        </h2>
 			      </div>
 			      <!-- /.col -->
@@ -301,7 +339,7 @@ class Orders extends Admin_Controller
 			      <div class="col-sm-4 invoice-col">
 			        
 			        <b>Bill ID:</b> '.$order_data['bill_no'].'<br>
-			        <b>Name:</b> '.$order_data['customer_name'].'<br>
+			        <b>M/s:</b> '.$order_data['customer_name'].'<br>
 			        <b>Address:</b> '.$order_data['customer_address'].' <br />
 			        <b>Phone:</b> '.$order_data['customer_phone'].'
 			      </div>
@@ -315,9 +353,10 @@ class Orders extends Admin_Controller
 			        <table class="table table-striped">
 			          <thead>
 			          <tr>
-			            <th>Product name</th>
+			            <th>Product name(description)</th>
 			            <th>Price</th>
 			            <th>Qty</th>
+						<th>Serial</th>
 			            <th>Amount</th>
 			          </tr>
 			          </thead>
@@ -331,6 +370,7 @@ class Orders extends Admin_Controller
 				            <td>'.$product_data['name'].'</td>
 				            <td>'.$v['rate'].'</td>
 				            <td>'.$v['qty'].'</td>
+							<td>No.'.$product_data['sku'].'</td>
 				            <td>'.$v['amount'].'</td>
 			          	</tr>';
 			          }
@@ -384,6 +424,26 @@ class Orders extends Admin_Controller
 			      </div>
 			      <!-- /.col -->
 			    </div>
+				<style>
+				h4{
+					font-family: Brush Script MT;
+					font-weight: bolder;
+					font-size: larger;
+					background-color: #010A30;
+					color: #fff;
+					text-align: right;
+					letter-spacing: 1.7px;
+				}
+				</style>
+				<h4>Services with a difference</h4> 
+				<style>
+				h5{
+					letter-spacing: 1.7px;
+				}
+				</style>
+			  <h5> <b><i> ACCOUNTS ARE DUE ON DEMAND </b><br>
+				<small><b>Thank you for choosing Inven Ci4 Inc.</b></small>
+			  </i></h5>
 			    <!-- /.row -->
 			  </section>
 			  <!-- /.content -->

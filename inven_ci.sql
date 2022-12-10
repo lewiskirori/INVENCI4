@@ -107,10 +107,12 @@ INSERT INTO `categories` (`id`, `name`, `active`) VALUES
 CREATE TABLE `company` (
   `id` int(11) NOT NULL,
   `company_name` varchar(255) NOT NULL,
+  `image` text NOT NULL,
   `service_charge_value` varchar(255) NOT NULL,
   `vat_charge_value` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `country` varchar(255) NOT NULL,
   `message` text NOT NULL,
   `currency` varchar(255) NOT NULL

@@ -156,7 +156,7 @@ class Brands extends Admin_Controller
 	        	$update = $this->model_brands->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Yay, Up to date !!';
+	        		$response['messages'] = 'Success, You are up-to-date !!';
 	        	}
 	        	else {
 	        		$response['success'] = false;
