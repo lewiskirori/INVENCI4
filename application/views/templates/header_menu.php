@@ -41,6 +41,7 @@
 			<?php  /* This sets the $time variable to the current hour in the 24 hour clock format */
     $time = date("H");
     /* Set the $timezone variable to become the current timezone */
+    date_default_timezone_set('Africa/Nairobi');
     $timezone = date("e");
     /* If the time is less than 1200 hours, show good morning */
     if ($time < "12") {

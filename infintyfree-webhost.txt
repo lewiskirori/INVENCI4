@@ -1,0 +1,21 @@
+infinityfree.net//invenci4
+coldcode703@gmail.com
+//db
+~mysqlusername|username
+epiz_33169227
+~mymsqlpwd/vpanel|pwd
+p7W9hfbD1AO42cw
+~mysqldbase|db
+epiz_33169227_invenci4 
+~mysqlhostname|server
+sql206.epizy.com
+
+FTP-Details
+~FTP Username
+epiz_33169227
+~FTP Pwd
+p7W9hfbD1AO42cw
+~FTP Host
+ftpupload.net
+~FTP port
+21
