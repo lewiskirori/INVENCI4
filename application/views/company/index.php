@@ -48,7 +48,7 @@
 
           <div class="box">
             <div class="box-header">
-              <img src="<?php echo site_url('invenci4-logo.jpg'); ?>" width="150" height="150" class="img-circle">
+              <img src="<?php echo site_url('assets/images/invenci4-logo.jpg'); ?>" width="150" height="150" class="img-circle">
               <h3 class="box-title">Your Company Logo</h3>
             </div>
             <form role="form" action="<?php base_url('company/update') ?>" method="post">

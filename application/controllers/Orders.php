@@ -315,7 +315,7 @@ class Orders extends Admin_Controller
 					}
 					</style>
 			        <h2 class="page-header">
-                  	<img src="http://127.0.0.1/InvenCi4/invenci4-logo.jpg" width="50" height="50" class="img-square"/>
+                  	<img src="http://127.0.0.1/InvenCi4/assets/images/invenci4-logo.jpg" width="50" height="50" class="img-square"/>
 			          '.$company_info['company_name'].'<br><small><i><b>ICT Sales, Maintenance & General Supplies</b></i></small>
 					  <small>'.$company_info['address'].'<br>
 					  Tel: '.$company_info['phone'].'<br>
