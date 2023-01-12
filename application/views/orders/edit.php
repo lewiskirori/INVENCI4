@@ -1,4 +1,12 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="../../assets/dBASE-ico.ico" />
+</head>
+</html>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -196,7 +204,7 @@
                 <input type="hidden" name="vat_charge_rate" value="<?php echo $company_data['vat_charge_value'] ?>" autocomplete="off">
 
                 <a target="__blank" href="<?php echo base_url() . 'orders/printDiv/'.$order_data['order']['id'] ?>" class="btn btn-default" >Print</a>
-                <button type="submit" class="btn btn-primary">Update Changes</button>
+                <button type="submit" class="btn btn-primary">Update ORD Changes</button>
                 <a href="<?php echo base_url('orders/') ?>" class="btn btn-warning">Back</a>
               </div>
             </form>

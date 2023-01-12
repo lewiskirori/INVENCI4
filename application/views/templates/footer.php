@@ -7,9 +7,9 @@
       }
     </style>
     <div class="pull-right hidden-xs">
-      <b>V</b> 0.2.0
+      <b>V.</b>0.2.0
     </div>
-    <strong>InvenCi4 &copy; <?php echo $company_data['company_name'] ?? '' ?> <?php echo date('Y') ?> | </strong>All Rights Reserved.
+    <strong><a href="<?php echo base_url('company'); ?>">Inven Inc.</a>&copy; <?php echo $company_data['company_name'] ?? '' ?>2022 - <?php echo date('Y') ?> | </strong>All Rights Reserved.
   </footer>
 
   <!-- Add the sidebar's background. This div must be placed

@@ -6,7 +6,7 @@
         <meta name="description" content="" />
     
         <title>InvenCi4 - Dbase, Sales & Maintenance System</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -118,7 +118,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">InvenCi4 &copy; <?php echo $company_data['company_name'] ?? '' ?> <?php echo date('Y') ?> | </strong>All Rights Reserved.</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">InvenCi4 &copy; <?php echo $company_data['company_name'] ?? '' ?>2022 - <?php echo date('Y') ?> | </strong>All Rights Reserved.</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

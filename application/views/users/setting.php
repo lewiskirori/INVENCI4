@@ -1,4 +1,12 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="../../assets/ICi4-icon.ico" />
+</head>
+</html>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -103,7 +111,7 @@
                 <div class="form-group">
                   <div class=" alert alert-info alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      Leave the password fields empty if you don't want to change..!
+                      Leave the password fields empty if you don't want to change!.
                   </div>
                 </div>
 
@@ -121,7 +129,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Profile Changes</button>
+                <button type="submit" class="btn btn-primary">Save PF Changes</button>
                 <a href="<?php echo base_url('users/') ?>" class="btn btn-warning">Back</a>
               </div>
             </form>
