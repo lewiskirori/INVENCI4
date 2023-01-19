@@ -42,12 +42,12 @@
     $time = date("H");
     /* Set the $timezone variable to become the current timezone */
     date_default_timezone_set('Africa/Nairobi');
-    $timezone = date("e");
+    
     /* If the time is less than 1200 hours, show good morning */
     if ($time < "12") {
         echo "Good Morning,";
     } else
-    /* If the time is grater than or equal to 1200 hours, but less than 1600 hours, so good afternoon */
+    /* If the time is greater than or equal to 1200 hours, but less than 1600 hours, so good afternoon */
     if ($time >= "12" && $time < "16") {
         echo "Good Afternoon,";
     } else
@@ -57,9 +57,9 @@
     } else
     /* Finally, show good night if the time is greater than or equal to 2000 hours */
     if ($time >= "20") {
-        echo "Shouldn't you be in bed?<br>Good Night,";
+        echo "Shouldn't you be in bed?.<br>Good Night,";
     }
-    ?> <?php echo $_SESSION["username"]; ?>!<br>
+    ?> <?php echo $_SESSION["username"]; ?><br>
     <?php echo date('H:i') ?> <?php echo date('D') .', '.date('M').' '.date('d.'); ?></span></a>
 
     <!-- <li class="header">Settings</li> -->
@@ -71,24 +71,26 @@
         display: inline;
         color: #23527C;
         float: right;
-        width: 100px;
+        width: 30px;
         right: 50%;
         margin-top: -33px;
         outline: none;
-        border: 1px solid rgb(44, 22, 8);
+        border: 2px solid #1E282C;
         border-radius: 30px;
         padding: 1px 3px;
         letter-spacing: 1px;
         cursor: pointer;
+        transform: translateX(-7px);
         
       }
       .logout-process:hover{
-        border: 1px solid rgb(44, 22, 8);
+        border: 2px solid #1E282C;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: translateX(-10px);
       }
     </style>
         <!-- user permission info -->
-        <a href="<?php echo base_url('auth/logout') ?> " class="logout-process"><i class="fa fa-power-off" style="font-size:23px"></i><span>Logout</span></a>
+        <a href="<?php echo base_url('auth/logout') ?> " class="logout-process"><i class="fa fa-power-off" style="font-size:23px"></i></a>
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->

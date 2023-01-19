@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
     
-        <title>InvenCi4 - Dbase, Sales & Maintenance System</title>
+        <title>InvenCi4 | Dbase, Sales & Maintenance System</title>
         <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="<?php echo base_url(''); ?>">Inven Inc.</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -38,7 +38,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase"><a class="nav-link" href="<?php echo base_url(''); ?>"> INVENCI4 </a></h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A fast, secure, and responsive database system managed by shareholders and administrators .</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A fast, secure, and responsive database system managed by stakeholders and administrators.</h2>
                         <a class="btn btn-primary" href="auth/login">Get Started</a>
                     </div>
                 </div>
@@ -51,9 +51,9 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">About Us</h2>
                         <p class="text-white-50">
-                            INVENCI4 is a fast, secure, and responsive Database system created by Inven Inc. It can manage system information by add, update, view and delete brand and product 
+                            INVENCI4 is a fast, secure, and responsive Database system created by Pap Loc. It can manage system information by add, update, view and delete brand and product on 
                             <a href="#page-top">the preview page.</a>
-                            The dbase system is a closed-source software, and is solitary managed by shareholders and administrators with entitlement .
+                            The dbase system is a closed-source software, and is solitary managed by stakeholders and owners with entitlement.
                         </p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">admin@domain.com</a></div>
+                                <div class="small text-black-50"><a href="mailto: papilocsta19@gmail.com">hiadmin@invenci4.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -104,20 +104,20 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+254 722 102 030</div>
+                                <div class="small text-black-50">+254 783 043 030</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="\\twitter.com"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="\\facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="\\whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                    <a class="mx-2" href='https://twitter.com'><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://wa.me/254783043031"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">InvenCi4 &copy; <?php echo $company_data['company_name'] ?? '' ?>2022 - <?php echo date('Y') ?> | </strong>All Rights Reserved.</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy; <?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> InvenCi4 | </strong>All Rights Reserved.</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
