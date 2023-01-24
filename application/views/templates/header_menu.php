@@ -18,7 +18,7 @@
         font-weight: bold;
         letter-spacing: 1px;
       }
-    </style> InvenCi4 SYS </span>
+    </style> INVENCI4 </span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
