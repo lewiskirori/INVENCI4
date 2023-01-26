@@ -19,7 +19,7 @@
         letter-spacing: 1px;
       }
     </style>
-    <img src="<?php echo site_url('assets/ICi4-icon.ico'); ?>">InvenCi4 </span>
+    <img src="<?php echo site_url('assets/dBASE-ico.ico'); ?>"> InvenCi4 </span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
