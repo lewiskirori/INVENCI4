@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
     
-        <title>InvenCi4 | Dbase, Sales & Maintenance System</title>
+        <title>InvenCi4 | Dbase, Sales & Maintenance Sys</title>
         <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>

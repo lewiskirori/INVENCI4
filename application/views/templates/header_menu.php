@@ -9,7 +9,7 @@
         font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
         font-weight: bold;
       }
-    </style> Inv </span>
+    </style> <img src="<?php echo site_url('assets/dBASE-ico.ico'); ?>"> Inv </span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">
       <style>
