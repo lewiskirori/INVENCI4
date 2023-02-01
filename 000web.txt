@@ -1,15 +1,3 @@
-papiloc19@gmail.com
-~PROJECT
-INVENCI4
-~pwd
-KSJJ&WbhdwXQW!HRiTDP
-
-SQL`DB
-~DB NAME
-id19994543_inven_ci4
-~DB USERN
-id19994543_inven_ci4_root
-~DB pswd
-F~U~02yo-e&-vg!O
-~db host
-localhost
+```
+00ps!
+```
