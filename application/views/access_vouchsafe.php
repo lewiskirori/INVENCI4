@@ -104,7 +104,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+254 783 043 030</div>
+                                <div class="small text-black-50">+257 738 400 330</div>
                             </div>
                         </div>
                     </div>
