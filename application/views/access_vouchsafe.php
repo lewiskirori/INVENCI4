@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
     
-        <title>InvenCi4 | Dbase, Sales & Maintenance Sys</title>
-        <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
+        <title>InvenCi4 | Dbase, Sales & Maintenance</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -94,7 +94,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="mailto: papilocsta19@gmail.com">hiadmin@invenci4.com</a></div>
+                                <div class="small text-black-50"><a href="mailto:papilocsta19@gmail.com">hiadmin@invenci4.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+257 738 400 330</div>
+                                <div class="small text-black-50">+257 438 400 3313</div>
                             </div>
                         </div>
                     </div>

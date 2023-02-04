@@ -272,11 +272,13 @@ class Orders extends Admin_Controller
 			<head>
 			  <meta charset="utf-8">
 			  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-			  <title>AdminLTE | Invoice</title>
+			  <title>AdminINV | Invoice</title>
 			  <!-- Tell the browser to be responsive to screen width -->
 			  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 			  <!-- Bootstrap 3.3.7 -->
 			  <link rel="stylesheet" href="'.base_url('assets/bower_components/bootstrap/dist/css/bootstrap.min.css').'">
+			  <!-- Header Browser Icon -->
+			  <link rel="icon" type="image/x-icon" href="../../assets/dBASE-ico.ico" />
 			  <!-- Font Awesome -->
 			  <link rel="stylesheet" href="'.base_url('assets/bower_components/font-awesome/css/font-awesome.min.css').'">
 			  <link rel="stylesheet" href="'.base_url('assets/dist/css/AdminLTE.min.css').'">
@@ -315,7 +317,7 @@ class Orders extends Admin_Controller
 					}
 					</style>
 			        <h2 class="page-header">
-                  	<img src="http://127.0.0.1/InvenCi4/assets/images/invenci4-logo.jpg" width="50" height="50" class="img-square"/>
+                  	<img src="https://invenci4.000webhostapp.com/assets/images/inven-log3.png" width="50" height="50" class="img-square"/>
 			          '.$company_info['company_name'].'<br><small><i><b>ICT Sales, Maintenance & General Supplies</b></i></small>
 					  <small>'.$company_info['address'].'<br>
 					  Tel: '.$company_info['phone'].'<br>
@@ -442,7 +444,7 @@ class Orders extends Admin_Controller
 				}
 				</style>
 			  <h5> <b><i> ACCOUNTS ARE DUE ON DEMAND </b><br>
-				<small><b>Thank you for choosing Inven Ci4 Inc.</b></small>
+				<small><b>Thank you for choosing InvenCi4 Inc.</b></small>
 			  </i></h5>
 			    <!-- /.row -->
 			  </section>
