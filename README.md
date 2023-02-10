@@ -1,4 +1,4 @@
-# Stock System
+# Inventory System
 
 An Invent System using CodeIgniter, MySQL &amp; PHP
 
