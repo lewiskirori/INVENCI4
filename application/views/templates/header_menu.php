@@ -9,7 +9,7 @@
         font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
         font-weight: bold;
       }
-    </style> <img src="<?php echo site_url('assets/dBASE-ico.ico'); ?>"> Inv </span>
+    </style> Inv </span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">
       <style>
@@ -19,7 +19,7 @@
         letter-spacing: 1px;
       }
     </style>
-    <img src="<?php echo site_url('assets/dBASE-ico.ico'); ?>"> InvenCi4 </span>
+    <img src="<?php echo site_url('assets/dBASE-ico.ico'); ?>"> InvenCi4</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -46,22 +46,21 @@
     
     /* If the time is less than 1200 hours, show good morning */
     if ($time < "12") {
-        echo "Good Morning,";
+        echo "Good Morning";
     } else
     /* If the time is greater than or equal to 1200 hours, but less than 1600 hours, so good afternoon */
     if ($time >= "12" && $time < "16") {
-        echo "Good Afternoon,";
+        echo "Good Afternoon";
     } else
     /* Should the time be between or equal to 1600 and 2000 hours, show good evening */
     if ($time >= "16" && $time < "20") {
-        echo "Good Evening,";
+        echo "Good Evening";
     } else
     /* Finally, show good night if the time is greater than or equal to 2000 hours */
     if ($time >= "20") {
-        echo "Shouldn't you be in bed?.<br>Good Night,";
+        echo "Shouldn't you be in bed? Good Night";
     }
-    ?> <?php echo $_SESSION["username"]; ?><br>
-    <?php echo date('H:i') ?> <?php echo date('D') .', '.date('M').' '.date('d.'); ?></span></a>
+    ?><br> <?php echo $_SESSION["username"]; ?> | <?php echo date('H:i') ?> <?php echo date('D') .', '.date('M').' '.date('d'); ?></span></a>
 
     <!-- <li class="header">Settings</li> -->
     <style>

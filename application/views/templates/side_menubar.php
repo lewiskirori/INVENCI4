@@ -156,8 +156,7 @@
           <li class="my-profile"><a href="<?php echo base_url('users/profile') ?>"><i class="fa fa-user-o"></i> <span> Account </span></a></li>
         <?php endif; ?>
        <?php if(in_array('updateSetting', $user_permission)): ?>
-        <li><a href="<?php echo base_url('users/setting/') ?>"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
-        <i class="fa fa-cog fa-spin fa-1x"></i>
+        <li><a href="<?php echo base_url('users/setting/') ?>"><i class="fa fa-cogs"></i>
         <span>Edit Profile</span></a></li>
         <?php endif; ?>
         <?php endif; ?>
