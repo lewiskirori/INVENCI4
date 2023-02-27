@@ -170,6 +170,7 @@
         </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy;<?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> InvenCi4 | </strong>All Rights Reserved.</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy; <?php echo $company_data['company_name'] ?? '' ?>2022 - <?php echo date('Y') ?> InvenCi4 | </strong>All Rights Reserved.</div></footer>
         <!----------------------scroll to top------------------------>
             <div class="scroll-top">
                 <i class="fa fa-angle-up" aria-hidden="true"></i>
