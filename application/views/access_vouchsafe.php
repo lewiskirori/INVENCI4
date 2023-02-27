@@ -47,8 +47,51 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase"><a class="nav-link" href="<?php echo base_url(''); ?>"> INVENCI4 </a></h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A fast, secure, and responsive database system managed by stakeholders and administrators.</h2>
-                        <a class="btn btn-primary" href="auth/login">Get Started</a>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Achieving a fast, secure, and responsive database system is crucial, and this can be accomplished through effective management by both stakeholders and administrators.</h2>
+                        <a id="myButton" class="btn btn-primary" href="auth/login">
+                            Get Started
+                            <span class="ripple"></span>
+                        </a>
+                        <style>
+                          #myButton {
+                            position: relative;
+                            overflow: hidden;
+                          }
+                          
+                          #myButton .ripple {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            pointer-events: none;
+                            background-image: radial-gradient(circle, rgba(255,255,255,.5) 10%, transparent 10.01%);
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            transform: scale(10, 10);
+                            opacity: 0;
+                            transition: transform .5s, opacity 1s;
+                          }
+                          
+                          #myButton:active .ripple {
+                            transform: scale(0, 0);
+                            opacity: 0.5;
+                            transition: 0s;
+                          }
+                        </style>
+                        <script>
+                            $('#myButton').on('click', function(e) {
+                              var ripple = $('<span class="ripple"></span>');
+                              var x = e.pageX - $(this).offset().left;
+                              var y = e.pageY - $(this).offset().top;
+                              ripple.css({
+                                left: x,
+                                top: y
+                              });
+                              $(this).append(ripple);
+                         
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -60,7 +103,7 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">About Us</h2>
                         <p class="text-white-50">
-                            INVENCI4 is a fast, secure, and responsive Database system created by Pap Loc. It can manage system information by add, update, view and delete brand and product on 
+                            INVENCI4 is a fast, secure, and responsive database system created by Pap Loc. It can manage system information by add, update, view and delete brand and order product on 
                             <a href="#page-top">the preview page.</a>
                             The dbase system is a closed-source software, and is solitary managed by stakeholders and owners with entitlement.
                         </p>
@@ -121,12 +164,12 @@
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href='https://twitter.com'><i class="fab fa-twitter"></i></a>
                     <a class="mx-2" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="https://wa.me/254783043031"><i class="fab fa-whatsapp"></i></a>
+                    <a class="mx-2" href="https://wa.me/254738400313"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy; <?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> InvenCi4 | </strong>All Rights Reserved.</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy;<?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> InvenCi4 | </strong>All Rights Reserved.</div></footer>
         <!----------------------scroll to top------------------------>
             <div class="scroll-top">
                 <i class="fa fa-angle-up" aria-hidden="true"></i>

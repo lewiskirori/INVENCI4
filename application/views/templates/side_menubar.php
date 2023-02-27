@@ -24,7 +24,7 @@
             </a>
             <ul class="treeview-menu">
               <?php if(in_array('createUser', $user_permission)): ?>
-              <li id="createUserNav"><a href="<?php echo base_url('users/create') ?>"><i class="fa fa-spinner fa-spin"></i> Add User</a></li>
+              <li id="createUserNav"><a href="<?php echo base_url('users/create') ?>"><i class="fa fa-spinner"></i> Add User</a></li>
               <?php endif; ?>
 
               <?php if(in_array('updateUser', $user_permission) || in_array('viewUser', $user_permission) || in_array('deleteUser', $user_permission)): ?>
@@ -45,7 +45,7 @@
               </a>
               <ul class="treeview-menu">
                 <?php if(in_array('createGroup', $user_permission)): ?>
-                  <li id="addGroupNav"><a href="<?php echo base_url('groups/create') ?>"><i class="fa fa-spinner fa-spin"></i> Add Group</a></li>
+                  <li id="addGroupNav"><a href="<?php echo base_url('groups/create') ?>"><i class="fa fa-spinner"></i> Add Group</a></li>
                 <?php endif; ?>
                 <?php if(in_array('updateGroup', $user_permission) || in_array('viewGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
                 <li id="manageGroupNav"><a href="<?php echo base_url('groups') ?>"><i class="fa fa-tasks"></i> Manage Groups</a></li>
@@ -98,7 +98,7 @@
               </a>
               <ul class="treeview-menu">
                 <?php if(in_array('createProduct', $user_permission)): ?>
-                  <li id="addProductNav"><a href="<?php echo base_url('products/create') ?>"><i class="fa fa-spinner fa-spin"></i> Add Product</a></li>
+                  <li id="addProductNav"><a href="<?php echo base_url('products/create') ?>"><i class="fa fa-spinner"></i> Add Product</a></li>
                 <?php endif; ?>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('viewProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                 <li id="manageProductNav"><a href="<?php echo base_url('products') ?>"><i class="fa fa-tasks"></i> Manage Products</a></li>
@@ -119,7 +119,7 @@
               </a>
               <ul class="treeview-menu">
                 <?php if(in_array('createOrder', $user_permission)): ?>
-                  <li id="addOrderNav"><a href="<?php echo base_url('orders/create') ?>"><i class="fa fa-spinner fa-spin"></i> Add Order</a></li>
+                  <li id="addOrderNav"><a href="<?php echo base_url('orders/create') ?>"><i class="fa fa-spinner"></i> Add Order</a></li>
                 <?php endif; ?>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
                 <li id="manageOrdersNav"><a href="<?php echo base_url('orders') ?>"><i class="fa fa-tasks"></i> Manage Orders</a></li>

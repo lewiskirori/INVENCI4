@@ -39,28 +39,32 @@
     </style><a href="<?php echo base_url('/dashboard') ?>">
    
     
-			<?php  /* This sets the $time variable to the current hour in the 24 hour clock format */
-    $time = date("H");
-    /* Set the $timezone variable to become the current timezone */
-    date_default_timezone_set('Africa/Nairobi');
-    
-    /* If the time is less than 1200 hours, show good morning */
-    if ($time < "12") {
-        echo "Good Morning";
-    } else
-    /* If the time is greater than or equal to 1200 hours, but less than 1600 hours, so good afternoon */
-    if ($time >= "12" && $time < "16") {
-        echo "Good Afternoon";
-    } else
-    /* Should the time be between or equal to 1600 and 2000 hours, show good evening */
-    if ($time >= "16" && $time < "20") {
-        echo "Good Evening";
-    } else
-    /* Finally, show good night if the time is greater than or equal to 2000 hours */
-    if ($time >= "20") {
-        echo "Shouldn't you be in bed? Good Night";
-    }
-    ?><br> <?php echo $_SESSION["username"]; ?> | <?php echo date('H:i') ?> <?php echo date('D') .', '.date('M').' '.date('d'); ?></span></a>
+			<?php 
+            /* Set the $timezone variable to become the current timezone */
+            date_default_timezone_set('Africa/Nairobi');
+            
+            /* This sets the $time variable to the current hour in the 24 hour clock format */
+            $time = date("H");
+            
+            /* If the time is less than 1200 hours, show good morning */
+            if ($time < "12") {
+                echo "Good Morning";
+            } else
+            /* If the time is greater than or equal to 1200 hours, but less than 1600 hours, so good afternoon */
+            if ($time >= "12" && $time < "16") {
+                echo "Good Afternoon";
+            } else
+            /* Should the time be between or equal to 1600 and 2000 hours, show good evening */
+            if ($time >= "16" && $time < "22") {
+                echo "Good Evening";
+            } else
+            /* Finally, show good night if the time is greater than or equal to 2000 hours */
+            if ($time >= "22") {
+                echo "Shouldn't you be in bed? Good Night";
+            }
+            ?>
+            <br>
+            <?php echo $_SESSION["username"]; ?> | <?php echo date('H:i') ?> <?php echo date('D') .', '.date('M').' '.date('d'); ?></span></a>
 
     <!-- <li class="header">Settings</li> -->
     <style>

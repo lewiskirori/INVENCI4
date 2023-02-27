@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
+  <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 </head>
 </html>
 
@@ -37,10 +42,31 @@
       </ol>
     </section>
 
-    <!-- Main content -->
     <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <?php if($is_admin == true): ?>
+          <!-- Small boxes (Stat box) -->
+          <?php 
+        session_start();
+        if($is_admin == true): ?>
+          <!-- pop-up message -->
+          <?php if(isset($_SESSION['message'])): ?>
+          <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <?php echo $_SESSION['message'];
+            unset($_SESSION['message']);
+            ?>
+                            <script>
+                                Swal.fire({
+                                  position: 'top-end',
+                                  icon: 'success',
+                                  title: 'Login was successful!',
+                                  showConfirmButton: false,
+                                  showCloseButton: false,
+                                  timer: 1800, //
+                                  timerProgressBar: false,
+                                });
+                            </script>
+          </div>
+        <?php endif; ?>
 
         <div class="row">
           <div class="col-lg-3 col-xs-6">

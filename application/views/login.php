@@ -87,14 +87,6 @@
     </style>
     Login </b></a>
     </div>
-    <p class="login-box-msg">
-    <style>
-      .login-box-msg{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bolder;
-      }
-    </style>
-    Sign in to your Control panel</p>
 
     <?php echo validation_errors(); ?>  
 
