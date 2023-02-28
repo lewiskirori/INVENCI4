@@ -63,4 +63,4 @@ Application Server
 ~ AdminLTE - Theme
 
 # Acknowledgement
-~ Great venture
+~ Great project
