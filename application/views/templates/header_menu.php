@@ -60,7 +60,7 @@
             } else
             /* Finally, show good night if the time is greater than or equal to 2000 hours */
             if ($time >= "22") {
-                echo "Shouldn't you be in bed? Good Night";
+                echo "Shouldn't you be in bed?<br>Good Night";
             }
             ?>
             <br>

@@ -47,7 +47,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase"><a class="nav-link" href="<?php echo base_url(''); ?>"> INVENCI4 </a></h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Achieving a fast, secure, and responsive database system is crucial, and this can be accomplished through effective management by both stakeholders and administrators.</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Achieving a fast, secure, and responsive database system, and this can be accomplished through effective management by both stakeholders and administrators.</h2>
                         <a id="myButton" class="btn btn-primary" href="auth/login">
                             Get Started
                             <span class="ripple"></span>
