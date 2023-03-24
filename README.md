@@ -56,10 +56,5 @@ Application Server
 
 ~ MIT
 
-# Resources
-
-~ CodeIgniter - Web Framework
-~ AdminLTE - Theme
-
 # Acknowledgement
 ~ Great project
