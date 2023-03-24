@@ -1,4 +1,4 @@
-# Database-Inventory-System
+# Database Inventory System
 
 A Databse invent system using CodeIgniter, MySQL &amp; PHP
 
