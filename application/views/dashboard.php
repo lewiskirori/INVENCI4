@@ -50,21 +50,11 @@
           <!-- pop-up message -->
           <?php if(isset($_SESSION['message'])): ?>
           <div class="alert alert-success alert-dismissible">
+              <i class="fa fa-check-circle"></i>
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             <?php echo $_SESSION['message'];
             unset($_SESSION['message']);
             ?>
-                            <script>
-                                Swal.fire({
-                                  position: 'top-end',
-                                  icon: 'success',
-                                  title: 'Login was successful!',
-                                  showConfirmButton: false,
-                                  showCloseButton: false,
-                                  timer: 1800, //
-                                  timerProgressBar: false,
-                                });
-                            </script>
           </div>
         <?php endif; ?>
 

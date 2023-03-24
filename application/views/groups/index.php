@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
+  <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
 </head>
 </html>
 
@@ -56,7 +56,6 @@
 
           <?php if(in_array('createGroup', $user_permission)): ?>
             <a href="<?php echo base_url('groups/create') ?>" class="btn btn-primary">Add Group</a>
-            <a href="<?php echo base_url('dashboard') ?>" class="btn btn-info">Back</a>
             <br /> <br />
           <?php endif; ?>
 

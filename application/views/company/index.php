@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="../assets/ICi4-icon.ico" />
+  <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
 </head>
 </html>
 
@@ -28,7 +28,7 @@
     </style>
       <h1>
         Manage
-        <small>Company info</small>
+        <small>Co. info</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -56,8 +56,8 @@
 
           <div class="box">
             <div class="box-header">
-              <img src="<?php echo site_url('assets/images/invenci4-logo.jpg'); ?>" width="150" height="150" class="img-circle">
-              <h3 class="box-title">Your Company Logo</h3>
+              <img src="<?php echo site_url('assets/images/inven-log3.png'); ?>" width="150" height="150" class="img-circle">
+              <h3 class="box-title">Company Logo</h3>
             </div>
             <form role="form" action="<?php base_url('company/update') ?>" method="post">
               <div class="box-body">
@@ -131,7 +131,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Co. Changes</button>
+                <button type="submit" class="btn btn-primary">Save Company Info.</button>
               </div>
             </form>
           </div>
@@ -177,7 +177,7 @@
         msgErrorClass: 'alert alert-block alert-danger',
         // defaultPreviewContent: '<img src="/uploads/default_avatar_male.jpg" alt="Your Avatar">',
         layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
-        allowedFileExtensions: ["jpg", "png", "gif"]
+        allowedFileExtensions: ["jpg", "jpeg", "png", "gif"]
     });
   });
 </script>

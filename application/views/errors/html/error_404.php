@@ -4,61 +4,91 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>404 Page Not Found</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/x-icon" href="../../assets/images/inven-log3.png"/>
+<title>Page Not Found: 404</title>
 <style type="text/css">
-
-::selection { background-color: #E13300; color: white; }
-::-moz-selection { background-color: #E13300; color: white; }
-
+/* Body */
 body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
+background-color: #F7F7F7;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #333;
+margin: 0;
+padding: 0;
 }
 
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
+/* Container */
+.container {
+max-width: 960px;
+margin: 0 auto;
+margin-top: 50px;
+padding: 30px;
+text-align: center;
+background-color: #fff;
+border: 1px solid #f5c6cb;
+border-radius: 10px;
+max-width: 600px;
 }
 
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
+/* Heading */
+.heading {
+font-size: 38px;
+font-weight: 700;
+color: #333;
+margin-bottom: 30px;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
+/* Subheading */
+.subheading {
+font-size: 24px;
+font-weight: 700;
+color: #333;
+margin-bottom: 30px;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	box-shadow: 0 0 8px #D0D0D0;
+/* Message */
+.message {
+font-size: 18px;
+color: #666;
+margin-bottom: 30px;
 }
 
-p {
-	margin: 12px 15px 12px 15px;
+/* Link */
+.link {
+color: #007bff;
+text-decoration: none;
+display: inline-block;
+margin-left: 5px;
+position: relative;
+}
+
+.link::before {
+content: '';
+position: absolute;
+left: 0;
+bottom: -2px;
+height: 2px;
+width: 0;
+background-color: #007bff;
+transition: width 0.3s ease-in-out;
+}
+
+.link:hover::before {
+width: 100%;
 }
 </style>
 </head>
 <body>
-	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+	<div class="container">
+		<h1 class="heading">Oops - Aw, Snap!</h1>
+		 <hr style="width: 50%; margin: 0 auto;">
+		<h2 class="subheading">404 - Page Not Found</h2>
+		<p class="message">We're sorry, but the page you requested could not be found.</p>
+		<p>Please check the URL and try again, or visit our<a class="link" href="/">homepage</a> to start over.</p>
 	</div>
 </body>
 </html>

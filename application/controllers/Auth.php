@@ -52,12 +52,12 @@ class Auth extends Admin_Controller
         			$this->session->set_userdata($logged_in_sess);
                     
                     //Redirect to dashboard.php view with success message
-                    $this->session->set_flashdata('success', 'Login was successful!');
-                    $_SESSION['message'] = "Welcome back, " . $logged_in_sess['username'] . "!";
+                    $this->session->set_flashdata();
+                    $_SESSION['message'] = "Welcome back, <strong>" . $logged_in_sess['username'] . "</strong>!";
                     redirect('dashboard');
                     }
     			else {
-    				$this->data['errors'] = '<p class="alert alert-warning">Incorrect email or password. Please retry!</p>';
+    				$this->data['errors'] = '<p class="alert alert-warning">Incorrect email or password. Please try again.</p>';
     				$this->load->view('login', $this->data);
     			}
     		}
@@ -75,7 +75,7 @@ class Auth extends Admin_Controller
 
 	
 	/*
-		clears the session and redirects to login page
+		clears the session and redirects to home page
 	*/
 	public function logout()
 	{

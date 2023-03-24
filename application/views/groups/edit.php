@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="../../assets/ICi4-icon.ico" />
+  <link rel="icon" type="image/x-icon" href="../../assets/images/inven-log3.png" />
 </head>
 </html>
 
@@ -262,7 +262,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Update Changes</button>
+                <button type="submit" class="btn btn-primary">Update Group</button>
                 <a href="<?php echo base_url('groups/') ?>" class="btn btn-warning">Back</a>
               </div>
             </form>

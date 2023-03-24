@@ -60,27 +60,28 @@
             } else
             /* Finally, show good night if the time is greater than or equal to 2000 hours */
             if ($time >= "22") {
-                echo "Shouldn't you be in bed?<br>Good Night";
+                echo "Shouldn't you be in bed? Good Night";
             }
             ?>
             <br>
-            <?php echo $_SESSION["username"]; ?> | <?php echo date('H:i') ?> <?php echo date('D') .', '.date('M').' '.date('d'); ?></span></a>
+            <?php echo $_SESSION["username"]; ?> | <?php echo date('l') .', '.date('M').' '.date('dS'); ?></span></a>
 
     <!-- <li class="header">Settings</li> -->
     <style>
       .logout-process{
         font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
         font-weight: bolder;
-        font-size: larger;
+        font-size: inherit;
         display: inline;
         color: #23527C;
         float: right;
-        width: 30px;
+        width: 100px;
         right: 50%;
         margin-top: -33px;
         outline: none;
+        justify-content: center;
         border: 2px solid #1E282C;
-        border-radius: 30px;
+        border-radius: 10px;
         padding: 1px 3px;
         letter-spacing: 1px;
         cursor: pointer;
@@ -94,7 +95,11 @@
       }
     </style>
         <!-- user permission info -->
-        <a href="<?php echo base_url('auth/logout') ?> " class="logout-process"><i class="fa fa-power-off" style="font-size:23px"></i></a>
+        <?php
+        $unique_id = bin2hex(random_bytes(25)); // random string of 50 chars
+        $url = base_url("auth/logout?c=auth&m=logout&id=$unique_id");
+        ?>
+        <a href="<?php echo $url; ?>" class="logout-process"><i class="fa fa-power-off" style="font-size:23px"></i> Log out</a>
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->

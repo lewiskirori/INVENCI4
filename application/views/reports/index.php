@@ -4,19 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="../assets/ICi4-icon.ico" />
+  <script src="assets/bower_components/chart.js/Chart.js"></script>
+  <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
 </head>
 </html>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-  <style>
-      .content-wrapper{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-weight: 500;
-        background-color: #1E282C;
-      }
-  </style>
+      <style>
+          .content-wrapper{
+            font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-weight: 500;
+            background-color: #1E282C;
+          }
+      </style>
     <!-- Content Header (Page header) -->
     <section class="content-header">
     <style>
@@ -41,7 +42,7 @@
       <div class="row">
 
         <div class="col-md-12 col-xs-12">
-          <form class="form-inline" action="<?php echo base_url('reports/') ?>" method="POST">
+          <form class="form-inline" action="<?php echo base_url('reports') ?>" method="POST">
             <div class="form-group">
               <label for="date">Year</label>
               <select class="form-control" name="select_year" id="select_year">
@@ -73,7 +74,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Monthly Sales - Report</h3>
+              <h3 class="box-title">Total Monthly Sales - Report Bar Chart</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -138,78 +139,77 @@
   <!-- /.content-wrapper -->
 
   <script type="text/javascript">
-
-    $(document).ready(function() {
-      $("#reportNav").addClass('active');
-       //This will help you to hide your message after 3 seconds with fadeOut animation.
-      // You can change seconds in timeout variable.
-      var timeout = 3000; // in miliseconds (3*1000)
-
-      $('.alert').delay(timeout).fadeOut(300);
-      }); 
-
-    var report_data = <?php echo '[' . implode(',', $results) . ']'; ?>;
+        $(document).ready(function() {
+          $("#reportNav").addClass('active');
+           //This will help you to hide your message after 3 seconds with fadeOut animation.
+          // You can change seconds in timeout variable.
+          var timeout = 3000; // in miliseconds (3*1000)
     
-
-    $(function () {
-    /* ChartJS
-     * -------
-     * Here we will create a few charts using ChartJS
-     */
-     var areaChartData = {
-      labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-      datasets: [
-        {
-          label               : 'Electronics',
-          fillColor           : 'rgba(210, 214, 222, 1)',
-          strokeColor         : 'rgba(210, 214, 222, 1)',
-          pointColor          : 'rgba(210, 214, 222, 1)',
-          pointStrokeColor    : '#c1c7d1',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
-          data                : report_data
+          $('.alert').delay(timeout).fadeOut(300);
+          }); 
+    
+        var report_data = <?php echo '[' . implode(',', $results) . ']'; ?>;
+        
+    
+        $(function () {
+        /* ChartJS
+         * -------
+         * Here we will create a few charts using ChartJS
+         */
+         var areaChartData = {
+          labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          datasets: [
+            {
+              label               : 'Electronics',
+              fillColor           : 'rgba(210, 214, 222, 1)',
+              strokeColor         : 'rgba(210, 214, 222, 1)',
+              pointColor          : 'rgba(210, 214, 222, 1)',
+              pointStrokeColor    : '#c1c7d1',
+              pointHighlightFill  : '#fff',
+              pointHighlightStroke: 'rgba(220,220,220,1)',
+              data                : report_data
+            }
+          ]
         }
-      ]
-    }
-
-    //-------------
-    //- BAR CHART -
-    //-------------
-    var barChartCanvas                   = $('#barChart').get(0).getContext('2d')
-    var barChart                         = new Chart(barChartCanvas)
-    var barChartData                     = areaChartData
-    barChartData.datasets[0].fillColor   = '#00a65a';
-    barChartData.datasets[0].strokeColor = '#00a65a';
-    barChartData.datasets[0].pointColor  = '#00a65a';
-    var barChartOptions                  = {
-      //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-      scaleBeginAtZero        : true,
-      //Boolean - Whether grid lines are shown across the chart
-      scaleShowGridLines      : true,
-      //String - Colour of the grid lines
-      scaleGridLineColor      : 'rgba(0,0,0,.05)',
-      //Number - Width of the grid lines
-      scaleGridLineWidth      : 1,
-      //Boolean - Whether to show horizontal lines (except X axis)
-      scaleShowHorizontalLines: true,
-      //Boolean - Whether to show vertical lines (except Y axis)
-      scaleShowVerticalLines  : true,
-      //Boolean - If there is a stroke on each bar
-      barShowStroke           : true,
-      //Number - Pixel width of the bar stroke
-      barStrokeWidth          : 2,
-      //Number - Spacing between each of the X value sets
-      barValueSpacing         : 5,
-      //Number - Spacing between data sets within X values
-      barDatasetSpacing       : 1,
-      //String - A legend template
-      legendTemplate          : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].fillColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
-      //Boolean - whether to make the chart responsive
-      responsive              : true,
-      maintainAspectRatio     : true
-    }
-
-    barChartOptions.datasetFill = false
-    barChart.Bar(barChartData, barChartOptions)
-  })
+    
+        //-------------
+        //- BAR CHART -
+        //-------------
+        var barChartCanvas                   = $('#barChart').get(0).getContext('2d')
+        var barChart                         = new Chart(barChartCanvas)
+        var barChartData                     = areaChartData
+        barChartData.datasets[0].fillColor   = '#00a65a';
+        barChartData.datasets[0].strokeColor = '#00a65a';
+        barChartData.datasets[0].pointColor  = '#00a65a';
+        var barChartOptions                  = {
+          //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+          scaleBeginAtZero        : true,
+          //Boolean - Whether grid lines are shown across the chart
+          scaleShowGridLines      : true,
+          //String - Colour of the grid lines
+          scaleGridLineColor      : 'rgba(0,0,0,.05)',
+          //Number - Width of the grid lines
+          scaleGridLineWidth      : 1,
+          //Boolean - Whether to show horizontal lines (except X axis)
+          scaleShowHorizontalLines: true,
+          //Boolean - Whether to show vertical lines (except Y axis)
+          scaleShowVerticalLines  : true,
+          //Boolean - If there is a stroke on each bar
+          barShowStroke           : true,
+          //Number - Pixel width of the bar stroke
+          barStrokeWidth          : 2,
+          //Number - Spacing between each of the X value sets
+          barValueSpacing         : 5,
+          //Number - Spacing between data sets within X values
+          barDatasetSpacing       : 1,
+          //String - A legend template
+          legendTemplate          : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].fillColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
+          //Boolean - whether to make the chart responsive
+          responsive              : true,
+          maintainAspectRatio     : true
+        }
+    
+        barChartOptions.datasetFill = false
+        barChart.Bar(barChartData, barChartOptions)
+      })
   </script>

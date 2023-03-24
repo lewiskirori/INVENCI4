@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="../../assets/ICi4-icon.ico" />
+  <link rel="icon" type="image/x-icon" href="../../assets/images/inven-log3.png" />
 </head>
 </html>
 
@@ -27,8 +27,7 @@
       }
     </style>
       <h1>
-        User
-        <small>Setting</small>
+        Settings
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -57,7 +56,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Update User Profile</h3>
+              <h3 class="box-title">My Profile</h3>
             </div>
             <!-- /.box-header -->
             <form role="form" action="<?php base_url('users/setting') ?>" method="post">
@@ -111,8 +110,8 @@
                 <div class="form-group">
                   <div class=" alert alert-info alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      Leave the password fields empty if you don't want to change!.
-                  </div>
+                        If you do not wish to change your password, leave the blanks empty...!                  
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -129,7 +128,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save PF Changes</button>
+                <button type="submit" class="btn btn-primary">Update Profile</button>
                 <a href="<?php echo base_url('users/') ?>" class="btn btn-warning">Back</a>
               </div>
             </form>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="assets/ICi4-icon.ico" />
+  <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
 </head>
 </html>
 
@@ -12,7 +12,7 @@
 <div class="content-wrapper">
 <style>
       .content-wrapper{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
         background-color: #1E282C;
       }
 </style>
@@ -57,7 +57,6 @@
 
         <?php if(in_array('createOrder', $user_permission)): ?>
           <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary">Add Order</a>
-          <a href="<?php echo base_url('dashboard') ?>" class="btn btn-info">Back</a>
           <br /> <br />
         <?php endif; ?>
 
@@ -214,6 +213,4 @@ setTimeout(function() {
     });
   }
 }
-
-
 </script>

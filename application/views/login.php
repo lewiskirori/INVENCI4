@@ -7,9 +7,13 @@
   <title>Log in - InvenCi4</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
+  <!-- Data Feather Loader -->
+  <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.min.css">
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
   
-
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
   <link rel="icon" type="image/x-icon" href="../../assets/images/inven-log3.png" />
 
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/bootstrap/dist/css/bootstrap.min.css') ?>">
@@ -76,7 +80,11 @@
     </style>
 
     <div class="login-logo">
-    <a href="<?php echo base_url('auth/login'); ?>">
+        <?php
+        $unique_id = bin2hex(random_bytes(25)); // random string of 50 chars
+        $url = base_url("auth/login?c=auth&m=login&id=$unique_id");
+        ?>
+    <a href="<?php echo $url; ?>">
     <b><style>
       .login-logo a{
         font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -94,13 +102,13 @@
       echo $errors;
     } ?>
 
-    <form action="<?php echo base_url('auth/login') ?>" method="post">
+    <form action="<?php echo base_url('auth/login?c=auth&m=login') ?>" method="post" onsubmit="submitButton.disabled = true; submitButton.innerHTML = '<i class=\'fa-solid fa-spinner fa-spin-pulse\'></i>';">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" autocomplete="on">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" autocomplete="on" >
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="on">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="on" maxlength="30">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -113,13 +121,13 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">
+          <button type="submit" class="btn btn-primary btn-block btn-flat" name="submitButton">
           <style>
-          .btn-primary.btn-block{
-        border-radius: 4px;
-        background-color: transparent;
-        }
-        </style>
+              .btn-primary.btn-block{
+            border-radius: 4px;
+            background-color: transparent;
+            }
+            </style>
           Sign In</button>
         </div>
         <!-- /.col -->

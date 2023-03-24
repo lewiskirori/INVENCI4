@@ -1,4 +1,4 @@
-<?php 
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class MY_Controller extends CI_Controller
 {
@@ -41,9 +41,10 @@ class Admin_Controller extends MY_Controller
 
 	public function not_logged_in()
 	{
+	    $unique_id = bin2hex(random_bytes(25)); // random string of 50 chars
 		$session_data = $this->session->userdata();
 		if($session_data['logged_in'] == FALSE) {
-			redirect('', 'refresh');
+			redirect("auth/login?c=auth&m=login&id=$unique_id", 'refresh');
 		}
 	}
 
