@@ -1,6 +1,6 @@
 # Database Inventory System
 
-A Databse invent system using CodeIgniter, MySQL &amp; PHP
+A Databse inventory system using CodeIgniter, MySQL &amp; PHP
 
 
 # System Features
