@@ -1,6 +1,6 @@
-# Inventory System
+# Dbase Inventory System
 
-An Invent System using CodeIgniter, MySQL &amp; PHP
+A Databse invent system using CodeIgniter, MySQL &amp; PHP
 
 
 # System Features
@@ -51,7 +51,6 @@ PHP version 5.6 or newer is recommended.
 Application Server
 
    ~ You can choose to install any of the following Application Server: LAMP, MAMP, XAMMP.
-
 
 # License
 
