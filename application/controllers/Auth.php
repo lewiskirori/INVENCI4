@@ -18,7 +18,7 @@ class Auth extends Admin_Controller
 	}
 
 	/* 
-		Check if the login form is submitted, and validates the user credential
+		Checks if the login form is submitted, and validates the user credential
 		If not submitted it redirects to the login page
 	*/
     public function login()
