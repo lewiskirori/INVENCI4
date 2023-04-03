@@ -64,7 +64,7 @@
             }
             ?>
             <br>
-            <?php echo $_SESSION["username"]; ?> | <?php echo date('l') .', '.date('M').' '.date('dS'); ?></span></a>
+            <?php echo $_SESSION["username"]; ?> | <?php echo date('l') .', '.date('M').' '.date('jS'); ?></span></a>
 
     <!-- <li class="header">Settings</li> -->
     <style>
