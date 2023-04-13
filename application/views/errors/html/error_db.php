@@ -79,10 +79,10 @@
         <h1>Hang tight! Let's try that again.</h1>
         <hr style="width: 50%; margin: 0 auto;">
         <p id="error">We're sorry, an error occurred while processing your request...</p>
-        <p>Please, stand by in <strong><span id="countdown" class="countdown-numbers">30</span> seconds</strong> or <a href="#" id="reload" onclick="location.reload();">Try again</a>.</p>
+        <p>Please, stand by in <strong><span id="countdown" class="countdown-numbers">15</span> seconds</strong> or <a href="#" id="reload" onclick="location.reload();">Try again</a>.</p>
         </div>
         <script>
-            var countdown = 30;
+            var countdown = 15;
             var timer = setInterval(function() {
               countdown--;
               if (countdown <= 0) {
