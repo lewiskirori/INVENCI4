@@ -29,14 +29,14 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="<?php echo base_url(''); ?>"><img src="<?php echo site_url('assets/dBASE-ico.ico'); ?>"> Inven Inc.</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span data-feather="grid"></span>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="False" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <?php
                             $unique_id = bin2hex(random_bytes(25)); // random string of 50 chars
-                            $url = base_url("auth/login?c=auth&m=login&id=$unique_id");
+                            $url = base_url("auth/login?c=auth&m=login&id=$unique_id/");
                         ?>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#info">Contact</a></li>
@@ -56,7 +56,7 @@
                         </h2>
                         <?php
                             $unique_id = bin2hex(random_bytes(25));
-                            $url = base_url("auth/login?c=auth&m=login&id=$unique_id");
+                            $url = base_url("auth/login?c=auth&m=login&id=$unique_id/");
                         ?>
                         <a id="myButton" class="btn btn-primary" href="<?php echo $url; ?>">
                             Get Started
@@ -116,7 +116,7 @@
                             INVENCI4 is a robust and efficient database system, meticulously crafted by Pap Loc to provide expeditious, fortified, and highly receptive data management capabilities. It offers the functionality to seamlessly add, create, update, view reports, brands & products, and order products
                             <?php
                                 $unique_id = bin2hex(random_bytes(25));
-                                $url = base_url("auth/login?c=auth&m=login&id=$unique_id");
+                                $url = base_url("auth/login?c=auth&m=login&id=$unique_id/");
                             ?>
                             <a href="<?php echo $url; ?>">jump right in.</a>
                             As a closed-source software, the database system is exclusively overseen and administered by stakeholders and owners who have authorization.
@@ -183,8 +183,65 @@
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">InvenCi4 &copy;<?php echo $company_data['company_name'] ?? '' ?> 2022-<?php echo date('Y') ?> | </strong>All Rights Reserved.</div></footer>
+        
+        <!-- Page loader -->
+         <div id="preloader">
+             <style>
+                #preloader {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  z-index: 9999;
+                  overflow: hidden;
+                  background: #fff;
+                }
+                
+                #preloader:before {
+                  content: "";
+                  position: fixed;
+                  top: calc(50% - 30px);
+                  left: calc(50% - 30px);
+                  border: 6px solid #64a19d;
+                  border-top-color: #fff;
+                  border-bottom-color: #fff;
+                  border-radius: 50%;
+                  width: 60px;
+                  height: 60px;
+                  animation: animate-preloader 1s linear infinite;
+                }
+                
+                @keyframes animate-preloader {
+                  0% {
+                    transform: rotate(0deg);
+                  }
+                
+                  100% {
+                    transform: rotate(360deg);
+                  }
+                }
+             </style>
+             
+             <script>
+                /**
+                 * Preloader
+                 */
+                document.addEventListener("DOMContentLoaded", () => {
+                    const preloader = document.querySelector("#preloader");
+                    if (preloader) {
+                        preloader.classList.add("hide");
+                        setTimeout(() => {
+                            preloader.remove();
+                        }, 1000);
+                    }
+                });
+            </script>
+         </div>
+         
         <!----------------------scroll to top------------------------>
             <div class="scroll-top">
                 <i class="fa fa-angle-up" aria-hidden="true"></i>

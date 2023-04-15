@@ -13,6 +13,61 @@
 </head>
 </html>
 
+<!-- Page loader -->
+ <div id="preloader">
+     <style>
+        #preloader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+          overflow: hidden;
+          background: #fff;
+        }
+        
+        #preloader:before {
+          content: "";
+          position: fixed;
+          top: calc(50% - 30px);
+          left: calc(50% - 30px);
+          border: 6px solid #64a19d;
+          border-top-color: #fff;
+          border-bottom-color: #fff;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          animation: animate-preloader 1s linear infinite;
+        }
+        
+        @keyframes animate-preloader {
+          0% {
+            transform: rotate(0deg);
+          }
+        
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+     </style>
+     
+     <script>
+        /**
+         * Preloader
+         */
+        document.addEventListener("DOMContentLoaded", () => {
+            const preloader = document.querySelector("#preloader");
+            if (preloader) {
+                preloader.classList.add("hide");
+                setTimeout(() => {
+                    preloader.remove();
+                }, 1000);
+            }
+        });
+    </script>
+ </div>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
   <style>
