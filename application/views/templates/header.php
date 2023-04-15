@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php echo $page_title; ?></title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <!-- Responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->  
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/bootstrap/dist/css/bootstrap.min.css') ?>">
@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/Ionicons/css/ionicons.min.css') ?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/AdminLTE.min.css') ?>">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
+  <!-- AdminLTE Skins -->
   <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/skins/_all-skins.min.css') ?>">
   <!-- Morris chart -->
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/morris.js/morris.css') ?>">
@@ -46,9 +45,9 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
-  <!-- jQuery 3 -->
+  <!-- jQuery -->
   <script src="<?php echo base_url('assets/bower_components/jquery/dist/jquery.min.js') ?>"></script>
-  <!-- jQuery UI 1.11.4 -->
+  <!-- jQuery UI -->
   <script src="<?php echo base_url('assets/bower_components/jquery-ui/jquery-ui.min.js') ?>"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
@@ -81,9 +80,9 @@
   <script src="<?php echo base_url('assets/bower_components/select2/dist/js/select2.full.min.js') ?>"></script>
   <!-- AdminLTE App -->  
   <script src="<?php echo base_url('assets/dist/js/adminlte.min.js') ?>"></script>
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <!-- AdminLTE dashboard -->
   <script src="<?php echo base_url('assets/dist/js/pages/dashboard.js') ?>"></script>
-  <!-- AdminLTE for demo purposes -->
+  <!-- AdminLTE -->
   <script src="<?php echo base_url('assets/dist/js/demo.js') ?>"></script>
   <script src="<?php echo base_url('assets/plugins/fileinput/fileinput.min.js') ?>"></script>
 
@@ -96,7 +95,6 @@
   <!-- DataTables -->
 <script src="<?php echo base_url('assets/bower_components/datatables.net/js/jquery.dataTables.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') ?>"></script>
-
 
 
 </head>

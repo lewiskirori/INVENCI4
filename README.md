@@ -1,6 +1,6 @@
-# Inventory System
+# Database Inventory System
 
-An Invent System using CodeIgniter, MySQL &amp; PHP
+A Databse inventory system using CodeIgniter, MySQL &amp; PHP
 
 
 # System Features
@@ -52,15 +52,9 @@ Application Server
 
    ~ You can choose to install any of the following Application Server: LAMP, MAMP, XAMMP.
 
-
 # License
 
 ~ MIT
-
-# Resources
-
-~ CodeIgniter - Web Framework
-~ AdminLTE - Theme
 
 # Acknowledgement
 ~ Great project

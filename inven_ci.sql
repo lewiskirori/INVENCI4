@@ -3,8 +3,6 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2018 at 10:20 PM
--- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `inven_ci`
+-- Database: `invenci4`
 --
 
 -- --------------------------------------------------------
@@ -123,7 +121,7 @@ CREATE TABLE `company` (
 --
 
 INSERT INTO `company` (`id`, `company_name`, `service_charge_value`, `vat_charge_value`, `address`, `phone`, `country`, `message`, `currency`) VALUES
-(1, 'ABC Inc.', '13', '10', '1234 Main St. Los Angeles, CA 98765 U.S.A.', '(123) 456-7890', 'United States of America', 'Sample message<br>', 'USD');
+(1, 'Inv Inc.', '3', '6', '1234 Main Revlon Biashara Srt, Nrb', '074567890', 'Kenya', 'Co:- Mantra<br>', 'KES');
 
 -- --------------------------------------------------------
 
