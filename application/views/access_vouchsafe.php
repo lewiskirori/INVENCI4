@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="InvenCi4 A First-rate Database, Sales, And Maintenance System" />
+    
         <title>InvenCi4 | Dbase, Sales & Maintenance</title>
         <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
-        <!-- Font Awesome icons -->
+        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!--Inter UI font-->
         <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+    
         <!--vendors styles-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -130,6 +132,7 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+
         <!-- Contact-->
         <section class="contact-section bg-black">
         <style>
