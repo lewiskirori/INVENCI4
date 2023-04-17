@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="image/x-icon" href="../../assets/images/inven-log3.png"/>
-<title>Page Not Found: 404</title>
+<title>Aw, Snap! 404 - Page Not Found</title>
 <style type="text/css">
 /* Body */
 body {
@@ -84,9 +84,9 @@ width: 100%;
 </head>
 <body>
 	<div class="container">
-		<h1 class="heading">Oops - Aw, Snap!</h1>
+		<h1 class="heading">Oops - 404!</h1>
 		 <hr style="width: 50%; margin: 0 auto;">
-		<h2 class="subheading">404 - Page Not Found</h2>
+		<h2 class="subheading">Page Not Found</h2>
 		<p class="message">We're sorry, but the page you requested could not be found.</p>
 		<p>Please check the URL and try again, or visit our<a class="link" href="/">homepage</a> to start over.</p>
 	</div>

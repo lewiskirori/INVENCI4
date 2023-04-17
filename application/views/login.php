@@ -27,77 +27,34 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/plugins/iCheck/square/blue.css') ?>">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <!-- Font Awesome icons (free version)-->
+  <!-- Font Awesome icons -->
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .form-control {
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          color: #fff;
+          border: 1px solid #aaa;
+          background-color: transparent;
+        }
+        
+        .form-control:focus {
+          border: 2px solid rgba(0, 123, 255, 0.5);
+        }
+    </style>
 
 </head>
-<!-- Page loader -->
- <div id="preloader">
-     <style>
-        #preloader {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 9999;
-          overflow: hidden;
-          background: #fff;
-        }
-        
-        #preloader:before {
-          content: "";
-          position: fixed;
-          top: calc(50% - 30px);
-          left: calc(50% - 30px);
-          border: 6px solid #64a19d;
-          border-top-color: #fff;
-          border-bottom-color: #fff;
-          border-radius: 50%;
-          width: 60px;
-          height: 60px;
-          animation: animate-preloader 1s linear infinite;
-        }
-        
-        @keyframes animate-preloader {
-          0% {
-            transform: rotate(0deg);
-          }
-        
-          100% {
-            transform: rotate(360deg);
-          }
-        }
-     </style>
-     
-     <script>
-        /**
-         * Preloader
-         */
-        document.addEventListener("DOMContentLoaded", () => {
-            const preloader = document.querySelector("#preloader");
-            if (preloader) {
-                preloader.classList.add("hide");
-                setTimeout(() => {
-                    preloader.remove();
-                }, 1000);
-            }
-        });
-    </script>
- </div>
+
 <!--nav-->
 <body id="page-top">
         <!-- Navigation-->
@@ -121,6 +78,60 @@
     </style>
 <div class="login-box">
     
+    <!-- Page loader -->
+     <div id="preloader">
+         <style>
+            #preloader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 9999;
+              overflow: hidden;
+              background: #fff;
+            }
+            
+            #preloader:before {
+              content: "";
+              position: fixed;
+              top: calc(50% - 30px);
+              left: calc(50% - 30px);
+              border: 6px solid #64a19d;
+              border-top-color: #fff;
+              border-bottom-color: #fff;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              animation: animate-preloader 1s linear infinite;
+            }
+            
+            @keyframes animate-preloader {
+              0% {
+                transform: rotate(0deg);
+              }
+            
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+         </style>
+         
+         <script>
+            /**
+             * Preloader
+             */
+            document.addEventListener("DOMContentLoaded", () => {
+                const preloader = document.querySelector("#preloader");
+                if (preloader) {
+                    preloader.classList.add("hide");
+                    setTimeout(() => {
+                        preloader.remove();
+                    }, 1000);
+                }
+            });
+        </script>
+    </div>
 
   <!-- /.login-logo -->
   <div class="login-box-body">

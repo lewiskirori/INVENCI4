@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Whoops!Something went wrong: 500</title>
+    <title>Whoops! 500 - Something went wrong</title>
     <link rel="icon" type="image/x-icon" href="../../assets/images/inven-log3.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<style type="text/css">
