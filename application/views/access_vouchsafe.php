@@ -7,7 +7,7 @@
     
         <title>InvenCi4 | Dbase, Sales & Maintenance</title>
         <link rel="icon" type="image/x-icon" href="assets/images/inven-log3.png" />
-        <!-- Font Awesome icons (free version)-->
+        <!-- Font Awesome icons -->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!--Inter UI font-->
         <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
