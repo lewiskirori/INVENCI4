@@ -37,7 +37,7 @@
             }
     
     		h1 {
-    			font-size: 25px;
+    		font-size: 25px;
                 margin: 0 0 20px;
                 text-align: center;
                 color: #333;
