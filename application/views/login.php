@@ -147,7 +147,7 @@
     <div class="login-logo">
         <?php
         $unique_id = bin2hex(random_bytes(25)); // random string of 50 chars
-        $url = base_url("auth/login?c=auth&m=login&id=$unique_id/");
+        $url = base_url("auth/login?c=auth&m=login&id=$unique_id");
         ?>
     <a href="<?php echo $url; ?>">
     <b><style>
