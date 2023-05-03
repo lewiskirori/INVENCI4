@@ -97,7 +97,7 @@
         <!-- user permission info -->
         <?php
         $unique_id = bin2hex(random_bytes(25)); // random string of 50 chars
-        $url = base_url("auth/logout?c=auth&m=logout&id=$unique_id/");
+        $url = base_url("auth/logout?c=auth&m=logout&id=$unique_id");
         ?>
         <a href="<?php echo $url; ?>" class="logout-process"><i class="fa fa-power-off" style="font-size:23px"></i> Log Out</a>
     </nav>
