@@ -8,7 +8,6 @@
 </head>
 </html>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
   <style>
       .content-wrapper{
@@ -17,7 +16,6 @@
         background-color: #1E282C;
       }
   </style>
-    <!-- Content Header (Page header) -->
     <section class="content-header">
     <style>
       h1{
@@ -36,9 +34,7 @@
       </ol>
     </section>
 
-    <!-- Main content -->
     <section class="content">
-      <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-md-12 col-xs-12">
 
@@ -53,7 +49,6 @@
     <span style="text-transform:uppercase;">
     <?php echo $user_data['username']; ?>.</span></i></b> </h3>
             </div>
-            <!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-condensed table-hovered">
                 <tr>
@@ -86,18 +81,11 @@
                 </tr>
               </table>
             </div>
-            <!-- /.box-body -->
           </div>
-          <!-- /.box -->
         </div>
-        <!-- col-md-12 -->
       </div>
-      <!-- /.row -->
       
-
     </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
 
  
