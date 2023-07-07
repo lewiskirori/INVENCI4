@@ -6,7 +6,7 @@ A Database inventory system using CodeIgniter, MySQL &amp; PHP
 
 # System Features
 1. Manage Users
-* Add new user detail
+* Add new user info
 * View, Update, and remove user information
 2. Manage Groups
 * Add new group information
