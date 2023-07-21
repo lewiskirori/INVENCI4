@@ -1,7 +1,7 @@
 # INVENCI4
 
 
-A Database inventory system using CodeIgniter, MySQL &amp; PHP
+A database inventory system using CodeIgniter, MySQL &amp; PHP
 
 
 # System Features
