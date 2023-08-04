@@ -36,7 +36,7 @@ A database inventory system using CodeIgniter, MySQL &amp; PHP
 * That includes company name, address, phone, message, vat charge, service charge and more..
 11. Profile
 * View the logged in user information
-12. Setting
+12. Settings
 * View, and Update logged in user information
 
 
